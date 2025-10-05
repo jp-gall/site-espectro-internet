@@ -90,20 +90,20 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header/Navigation */}
-      <header className="bg-white shadow-lg sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+      <header className="bg-white shadow-lg sticky top-0 z-50 relative h-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+          <div className="flex justify-between items-center h-full">
             {/* Logo */}
-            <div className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
-                <Wifi className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
-                  ESPECTRO
-                </h1>
-                <p className="text-xs text-gray-600">Internet Fibra Óptica</p>
-              </div>
+            <div className="flex items-center space-x-2 relative z-60">
+              <img 
+                src="https://k6hrqrxuu8obbfwn.public.blob.vercel-storage.com/temp/31b6a839-c6ce-4fc5-86be-cd1dce6ef9f3.png" 
+                alt="Logo ESPECTRO" 
+                className="h-12 sm:h-14 md:h-16 lg:h-18 xl:h-20 w-auto object-contain max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] relative z-60" 
+                style={{
+                  transform: 'translateY(5px)',
+                  filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.1))'
+                }}
+              />
             </div>
 
             {/* Desktop Navigation */}
@@ -902,15 +902,11 @@ export default function Home() {
             {/* Logo and Description */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-2 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
-                  <Wifi className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                    ESPECTRO
-                  </h1>
-                  <p className="text-xs text-gray-400">Internet Fibra Óptica</p>
-                </div>
+                <img 
+                  src="https://k6hrqrxuu8obbfwn.public.blob.vercel-storage.com/temp/31b6a839-c6ce-4fc5-86be-cd1dce6ef9f3.png" 
+                  alt="Logo ESPECTRO" 
+                  className="h-6 sm:h-8 w-auto object-contain max-w-[120px] sm:max-w-[150px]" 
+                />
               </div>
               <p className="text-gray-400 mb-6 max-w-md">
                 Conectando Guarapuava ao futuro com internet de alta velocidade, 
